@@ -20,6 +20,9 @@
                                 <rect key="frame" x="82" y="176" width="157" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.24259987641797442" green="0.40376792733269706" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delagate" destination="vXZ-lx-hvc" id="SgN-rk-5Z1"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

@@ -26,4 +26,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+//-----------------------------------------------------------------------
+#pragma mark -- MultiProgressViewDelagate --
+//-----------------------------------------------------------------------
+
+
+- (CGFloat)valueOfAttributeWithIndex:(NSInteger)index {
+    return arc4random_uniform(50) / 50.0;
+}
+
+- (NSInteger)numberOfAttributes {
+    return 3;
+}
+
 @end

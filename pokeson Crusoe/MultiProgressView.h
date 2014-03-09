@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol MultiProgressViewDelagate <NSObject>
+- (NSInteger) numberOfAttributes;
+- (CGFloat) valueOfAttributeWithIndex:(NSInteger)index;
+@end
+
 @interface MultiProgressView : UIView
+
+@property IBOutlet id<MultiProgressViewDelagate> delagate;
 
 @end
