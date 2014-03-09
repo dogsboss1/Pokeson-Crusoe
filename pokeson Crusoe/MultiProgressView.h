@@ -11,6 +11,7 @@
 @protocol MultiProgressViewDelagate <NSObject>
 - (NSInteger) numberOfAttributes;
 - (CGFloat) valueOfAttributeWithIndex:(NSInteger)index;
+- (UIColor *) colorOfAttributeWithIndex:(NSInteger)index;
 @end
 
 @interface MultiProgressView : UIView

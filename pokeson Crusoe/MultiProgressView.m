@@ -22,14 +22,14 @@
     NSInteger numberOfAttributes = [self.delagate numberOfAttributes];
     CGFloat height = masterRect.size.height / numberOfAttributes;
     
-    for (NSInteger i = 0; i <numberOfAttributes; i+=1) {
+    for (NSInteger i=0; i <numberOfAttributes; i+=1) {
         CGFloat width = [self.delagate valueOfAttributeWithIndex:i] * masterRect.size.width;
         CGRect rect = CGRectMake(masterRect.origin.x,
                                  masterRect.origin.y + i * height,
                                  width,
                                  height);
-        CGContextSetFillColorWithColor(context, [[UIColor redColor] CGColor]);
-        CGContextStrokeRect(context, rect);
+        CGContextSetFillColorWithColor(context, [[self.delagate colorOfAttributeWithIndex:i] CGColor]);
+        CGContextFillRect(context, rect);
     }
 }
 

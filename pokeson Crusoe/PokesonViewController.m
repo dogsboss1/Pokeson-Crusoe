@@ -26,6 +26,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(CGFloat) randomSingleFloat {
+    return arc4random_uniform(50) / 50.0;
+
+}
+
 //-----------------------------------------------------------------------
 #pragma mark -- MultiProgressViewDelagate --
 //-----------------------------------------------------------------------
@@ -36,7 +41,15 @@
 }
 
 - (NSInteger)numberOfAttributes {
-    return 3;
+    return 11;
+}
+
+- (UIColor *)colorOfAttributeWithIndex:(NSInteger)index {
+    CGFloat hue = index / (float)[self numberOfAttributes];
+    return [UIColor colorWithHue:hue
+                      saturation:0.8
+                      brightness:0.8
+                           alpha:1];
 }
 
 @end
