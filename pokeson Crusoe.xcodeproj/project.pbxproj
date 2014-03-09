@@ -14,7 +14,7 @@
 		A44D151918CC16B00039A75A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A44D151818CC16B00039A75A /* main.m */; };
 		A44D151D18CC16B00039A75A /* PokesonAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A44D151C18CC16B00039A75A /* PokesonAppDelegate.m */; };
 		A44D152018CC16B00039A75A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A44D151E18CC16B00039A75A /* Main.storyboard */; };
-		A44D152318CC16B00039A75A /* PokesonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A44D152218CC16B00039A75A /* PokesonViewController.m */; };
+		A44D152318CC16B00039A75A /* TestingMultiProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A44D152218CC16B00039A75A /* TestingMultiProgressViewController.m */; };
 		A44D152518CC16B00039A75A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A44D152418CC16B00039A75A /* Images.xcassets */; };
 		A44D152C18CC16B00039A75A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A44D152B18CC16B00039A75A /* XCTest.framework */; };
 		A44D152D18CC16B00039A75A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A44D150C18CC16B00039A75A /* Foundation.framework */; };
@@ -22,6 +22,11 @@
 		A44D153618CC16B00039A75A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A44D153418CC16B00039A75A /* InfoPlist.strings */; };
 		A44D153818CC16B00039A75A /* pokeson_CrusoeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A44D153718CC16B00039A75A /* pokeson_CrusoeTests.m */; };
 		A44D154318CC17BF0039A75A /* MultiProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = A44D154218CC17BF0039A75A /* MultiProgressView.m */; };
+		A46E38A918CC8D0B00548A2B /* AllCreaturesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A46E38A818CC8D0B00548A2B /* AllCreaturesTableViewController.m */; };
+		A46E38AC18CC910A00548A2B /* Pokeson.m in Sources */ = {isa = PBXBuildFile; fileRef = A46E38AB18CC910A00548A2B /* Pokeson.m */; };
+		A46E38AF18CC9FE900548A2B /* PokesonPopulation.m in Sources */ = {isa = PBXBuildFile; fileRef = A46E38AE18CC9FE900548A2B /* PokesonPopulation.m */; };
+		A46E38B218CCA4F700548A2B /* bat thing.png in Resources */ = {isa = PBXBuildFile; fileRef = A46E38B018CCA4F700548A2B /* bat thing.png */; };
+		A46E38B318CCA4F700548A2B /* dinosaur.png in Resources */ = {isa = PBXBuildFile; fileRef = A46E38B118CCA4F700548A2B /* dinosaur.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +51,8 @@
 		A44D151B18CC16B00039A75A /* PokesonAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PokesonAppDelegate.h; sourceTree = "<group>"; };
 		A44D151C18CC16B00039A75A /* PokesonAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PokesonAppDelegate.m; sourceTree = "<group>"; };
 		A44D151F18CC16B00039A75A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A44D152118CC16B00039A75A /* PokesonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PokesonViewController.h; sourceTree = "<group>"; };
-		A44D152218CC16B00039A75A /* PokesonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PokesonViewController.m; sourceTree = "<group>"; };
+		A44D152118CC16B00039A75A /* TestingMultiProgressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestingMultiProgressViewController.h; sourceTree = "<group>"; };
+		A44D152218CC16B00039A75A /* TestingMultiProgressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestingMultiProgressViewController.m; sourceTree = "<group>"; };
 		A44D152418CC16B00039A75A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A44D152A18CC16B00039A75A /* pokeson CrusoeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pokeson CrusoeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A44D152B18CC16B00039A75A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -56,6 +61,14 @@
 		A44D153718CC16B00039A75A /* pokeson_CrusoeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pokeson_CrusoeTests.m; sourceTree = "<group>"; };
 		A44D154118CC17BF0039A75A /* MultiProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiProgressView.h; sourceTree = "<group>"; };
 		A44D154218CC17BF0039A75A /* MultiProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiProgressView.m; sourceTree = "<group>"; };
+		A46E38A718CC8D0B00548A2B /* AllCreaturesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllCreaturesTableViewController.h; sourceTree = "<group>"; };
+		A46E38A818CC8D0B00548A2B /* AllCreaturesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllCreaturesTableViewController.m; sourceTree = "<group>"; };
+		A46E38AA18CC910A00548A2B /* Pokeson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pokeson.h; sourceTree = "<group>"; };
+		A46E38AB18CC910A00548A2B /* Pokeson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pokeson.m; sourceTree = "<group>"; };
+		A46E38AD18CC9FE900548A2B /* PokesonPopulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokesonPopulation.h; sourceTree = "<group>"; };
+		A46E38AE18CC9FE900548A2B /* PokesonPopulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokesonPopulation.m; sourceTree = "<group>"; };
+		A46E38B018CCA4F700548A2B /* bat thing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bat thing.png"; sourceTree = "<group>"; };
+		A46E38B118CCA4F700548A2B /* dinosaur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dinosaur.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +128,18 @@
 			isa = PBXGroup;
 			children = (
 				A44D151E18CC16B00039A75A /* Main.storyboard */,
+				A46E38A718CC8D0B00548A2B /* AllCreaturesTableViewController.h */,
+				A46E38A818CC8D0B00548A2B /* AllCreaturesTableViewController.m */,
+				A46E38AA18CC910A00548A2B /* Pokeson.h */,
+				A46E38AB18CC910A00548A2B /* Pokeson.m */,
+				A46E38AD18CC9FE900548A2B /* PokesonPopulation.h */,
+				A46E38AE18CC9FE900548A2B /* PokesonPopulation.m */,
 				A44D154118CC17BF0039A75A /* MultiProgressView.h */,
 				A44D154218CC17BF0039A75A /* MultiProgressView.m */,
-				A44D152118CC16B00039A75A /* PokesonViewController.h */,
-				A44D152218CC16B00039A75A /* PokesonViewController.m */,
+				A44D152118CC16B00039A75A /* TestingMultiProgressViewController.h */,
+				A44D152218CC16B00039A75A /* TestingMultiProgressViewController.m */,
+				A46E38B018CCA4F700548A2B /* bat thing.png */,
+				A46E38B118CCA4F700548A2B /* dinosaur.png */,
 				A44D151318CC16B00039A75A /* Supporting Files */,
 			);
 			path = "pokeson Crusoe";
@@ -236,7 +257,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A46E38B318CCA4F700548A2B /* dinosaur.png in Resources */,
 				A44D152518CC16B00039A75A /* Images.xcassets in Resources */,
+				A46E38B218CCA4F700548A2B /* bat thing.png in Resources */,
 				A44D151718CC16B00039A75A /* InfoPlist.strings in Resources */,
 				A44D152018CC16B00039A75A /* Main.storyboard in Resources */,
 			);
@@ -258,9 +281,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A44D151D18CC16B00039A75A /* PokesonAppDelegate.m in Sources */,
+				A46E38AF18CC9FE900548A2B /* PokesonPopulation.m in Sources */,
 				A44D151918CC16B00039A75A /* main.m in Sources */,
 				A44D154318CC17BF0039A75A /* MultiProgressView.m in Sources */,
-				A44D152318CC16B00039A75A /* PokesonViewController.m in Sources */,
+				A46E38AC18CC910A00548A2B /* Pokeson.m in Sources */,
+				A44D152318CC16B00039A75A /* TestingMultiProgressViewController.m in Sources */,
+				A46E38A918CC8D0B00548A2B /* AllCreaturesTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +495,7 @@
 				A44D153D18CC16B00039A75A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A44D153E18CC16B00039A75A /* Build configuration list for PBXNativeTarget "pokeson CrusoeTests" */ = {
 			isa = XCConfigurationList;
@@ -477,6 +504,7 @@
 				A44D154018CC16B00039A75A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 Felix King. All rights reserved.
 //
 
-#import "PokesonViewController.h"
+#import "TestingMultiProgressViewController.h"
 
-@interface PokesonViewController ()
+@interface TestingMultiProgressViewController ()
 
 @end
 
-@implementation PokesonViewController
+@implementation TestingMultiProgressViewController
 
 - (void)viewDidLoad
 {
