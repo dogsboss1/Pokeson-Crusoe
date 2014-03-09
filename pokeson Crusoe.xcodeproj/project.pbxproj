@@ -21,6 +21,7 @@
 		A44D152E18CC16B00039A75A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A44D151018CC16B00039A75A /* UIKit.framework */; };
 		A44D153618CC16B00039A75A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A44D153418CC16B00039A75A /* InfoPlist.strings */; };
 		A44D153818CC16B00039A75A /* pokeson_CrusoeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A44D153718CC16B00039A75A /* pokeson_CrusoeTests.m */; };
+		A44D154318CC17BF0039A75A /* MultiProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = A44D154218CC17BF0039A75A /* MultiProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		A44D153318CC16B00039A75A /* pokeson CrusoeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "pokeson CrusoeTests-Info.plist"; sourceTree = "<group>"; };
 		A44D153518CC16B00039A75A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A44D153718CC16B00039A75A /* pokeson_CrusoeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pokeson_CrusoeTests.m; sourceTree = "<group>"; };
+		A44D154118CC17BF0039A75A /* MultiProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiProgressView.h; sourceTree = "<group>"; };
+		A44D154218CC17BF0039A75A /* MultiProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiProgressView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				A44D151218CC16B00039A75A /* pokeson Crusoe */,
-				A44D153118CC16B00039A75A /* pokeson CrusoeTests */,
-				A44D150B18CC16B00039A75A /* Frameworks */,
-				A44D150A18CC16B00039A75A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +96,7 @@
 				A44D152A18CC16B00039A75A /* pokeson CrusoeTests.xctest */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		A44D150B18CC16B00039A75A /* Frameworks */ = {
@@ -107,17 +108,17 @@
 				A44D152B18CC16B00039A75A /* XCTest.framework */,
 			);
 			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		A44D151218CC16B00039A75A /* pokeson Crusoe */ = {
 			isa = PBXGroup;
 			children = (
-				A44D151B18CC16B00039A75A /* PokesonAppDelegate.h */,
-				A44D151C18CC16B00039A75A /* PokesonAppDelegate.m */,
 				A44D151E18CC16B00039A75A /* Main.storyboard */,
+				A44D154118CC17BF0039A75A /* MultiProgressView.h */,
+				A44D154218CC17BF0039A75A /* MultiProgressView.m */,
 				A44D152118CC16B00039A75A /* PokesonViewController.h */,
 				A44D152218CC16B00039A75A /* PokesonViewController.m */,
-				A44D152418CC16B00039A75A /* Images.xcassets */,
 				A44D151318CC16B00039A75A /* Supporting Files */,
 			);
 			path = "pokeson Crusoe";
@@ -126,6 +127,12 @@
 		A44D151318CC16B00039A75A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A44D153118CC16B00039A75A /* pokeson CrusoeTests */,
+				A44D150B18CC16B00039A75A /* Frameworks */,
+				A44D150A18CC16B00039A75A /* Products */,
+				A44D152418CC16B00039A75A /* Images.xcassets */,
+				A44D151B18CC16B00039A75A /* PokesonAppDelegate.h */,
+				A44D151C18CC16B00039A75A /* PokesonAppDelegate.m */,
 				A44D151418CC16B00039A75A /* pokeson Crusoe-Info.plist */,
 				A44D151518CC16B00039A75A /* InfoPlist.strings */,
 				A44D151818CC16B00039A75A /* main.m */,
@@ -141,7 +148,7 @@
 				A44D153218CC16B00039A75A /* Supporting Files */,
 			);
 			path = "pokeson CrusoeTests";
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		A44D153218CC16B00039A75A /* Supporting Files */ = {
 			isa = PBXGroup;
@@ -252,6 +259,7 @@
 			files = (
 				A44D151D18CC16B00039A75A /* PokesonAppDelegate.m in Sources */,
 				A44D151918CC16B00039A75A /* main.m in Sources */,
+				A44D154318CC17BF0039A75A /* MultiProgressView.m in Sources */,
 				A44D152318CC16B00039A75A /* PokesonViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
