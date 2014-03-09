@@ -52,4 +52,8 @@
                            alpha:1];
 }
 
+- (MultiProgressViewDisplayStyle)displayStyle {
+    return MultiProgressViewDisplayStyleLeftToRight;
+}
+
 @end

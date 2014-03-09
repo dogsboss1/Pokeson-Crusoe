@@ -8,10 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger, MultiProgressViewDisplayStyle) {
+    MultiProgressViewDisplayStyleLeftToRight,
+    MultiProgressViewDisplayStyleRightToLeft,
+};
+
+
 @protocol MultiProgressViewDelagate <NSObject>
 - (NSInteger) numberOfAttributes;
 - (CGFloat) valueOfAttributeWithIndex:(NSInteger)index;
 - (UIColor *) colorOfAttributeWithIndex:(NSInteger)index;
+- (MultiProgressViewDisplayStyle) displayStyle;
 @end
 
 @interface MultiProgressView : UIView

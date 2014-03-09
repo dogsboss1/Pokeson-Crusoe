@@ -17,17 +17,26 @@
 - (void)drawRect:(CGRect)masterRect
 {
     CGContextRef context = UIGraphicsGetCurrentContext();
-    
+    MultiProgressViewDisplayStyle style = [self.delagate displayStyle];
     
     NSInteger numberOfAttributes = [self.delagate numberOfAttributes];
     CGFloat height = masterRect.size.height / numberOfAttributes;
     
     for (NSInteger i=0; i <numberOfAttributes; i+=1) {
         CGFloat width = [self.delagate valueOfAttributeWithIndex:i] * masterRect.size.width;
-        CGRect rect = CGRectMake(masterRect.origin.x,
-                                 masterRect.origin.y + i * height,
-                                 width,
-                                 height);
+        CGRect rect;
+        
+        if (style == MultiProgressViewDisplayStyleLeftToRight) {
+        rect = CGRectMake(masterRect.origin.x,
+                          masterRect.origin.y + i * height,
+                          width,
+                          height);
+        } else if (style == MultiProgressViewDisplayStyleRightToLeft) {
+        rect = CGRectMake(masterRect.size.width - width,
+                          masterRect.origin.y + i * height,
+                          width,
+                          height);
+        }
         CGContextSetFillColorWithColor(context, [[self.delagate colorOfAttributeWithIndex:i] CGColor]);
         CGContextFillRect(context, rect);
     }
