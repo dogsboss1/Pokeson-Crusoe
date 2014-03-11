@@ -12,15 +12,31 @@
 
 + (Pokeson *)randomPokeson {
     Pokeson *p = [[Pokeson alloc] init];
-    if (arc4random_uniform(3) < 2) {
-        p.name = @"Bateson";
-        p.hitpoints = 30;
-        p.happiness = 80;
+    NSInteger randPokeson = arc4random_uniform(4);
+    if (randPokeson == 0) {
+        p.name = @"Dineson";
+        p.hitpoints = 20 + arc4random_uniform(30);
+        p.happiness = 30 + arc4random_uniform(30);
         p.image_fileName = @"dinosaur";
-    } else {
+    } else if (randPokeson == 1) {
         p.name = @"Evil bat pokeson";
-        p.hitpoints = 1000;
-        p.happiness = 10;
+        p.hitpoints = 700 + arc4random_uniform(400);
+        p.happiness = 3 + arc4random_uniform(9);
+        p.image_fileName = @"bat thing";
+    } else if (randPokeson == 2) {
+        p.name = @"Sleepy Dineson";
+        p.hitpoints = 200 + arc4random_uniform(900);
+        p.happiness = 350 + arc4random_uniform(900);
+        p.image_fileName = @"dinosaur";
+    } else if (randPokeson == 3) {
+        p.name = @"Crazed Dienson";
+        p.hitpoints = 30 + arc4random_uniform(40);
+        p.happiness = 2 + arc4random_uniform(10);
+        p.image_fileName = @"dinosaur";
+    } else if (randPokeson == 4) {
+        p.name = @"Evil bat pokeson";
+        p.hitpoints = 500 + arc4random_uniform(600);
+        p.happiness = 6 + arc4random_uniform(8);
         p.image_fileName = @"bat thing";
     }
     return p;

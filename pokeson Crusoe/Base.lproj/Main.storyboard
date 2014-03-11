@@ -46,7 +46,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="61s-tR-owP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="648" y="-199"/>
+            <point key="canvasLocation" x="158" y="-187"/>
         </scene>
         <!--Testing Multi Progress View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -74,7 +74,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1078" y="-194"/>
+            <point key="canvasLocation" x="618" y="-168"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
