@@ -52,7 +52,7 @@
     
     Pokeson *p = [self.population.allPokesons objectAtIndex:indexPath.row];
     
-    cell.textLabel.text = p.name;
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ %@", p.emotionText, p.name];
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ HP, %@ happy",
                                  @(p.hitpoints), @(p.happiness)];
     cell.imageView.image = [UIImage imageNamed:p.image_fileName];

@@ -27,6 +27,7 @@
 		A46E38AF18CC9FE900548A2B /* PokesonPopulation.m in Sources */ = {isa = PBXBuildFile; fileRef = A46E38AE18CC9FE900548A2B /* PokesonPopulation.m */; };
 		A46E38B218CCA4F700548A2B /* bat thing.png in Resources */ = {isa = PBXBuildFile; fileRef = A46E38B018CCA4F700548A2B /* bat thing.png */; };
 		A46E38B318CCA4F700548A2B /* dinosaur.png in Resources */ = {isa = PBXBuildFile; fileRef = A46E38B118CCA4F700548A2B /* dinosaur.png */; };
+		CB9B8C4518CEA0F0008A74BC /* BuildingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9B8C4418CEA0F0008A74BC /* BuildingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		A46E38AE18CC9FE900548A2B /* PokesonPopulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokesonPopulation.m; sourceTree = "<group>"; };
 		A46E38B018CCA4F700548A2B /* bat thing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bat thing.png"; sourceTree = "<group>"; };
 		A46E38B118CCA4F700548A2B /* dinosaur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dinosaur.png; sourceTree = "<group>"; };
+		CB9B8C4318CEA0F0008A74BC /* BuildingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildingViewController.h; sourceTree = "<group>"; };
+		CB9B8C4418CEA0F0008A74BC /* BuildingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuildingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,16 +131,9 @@
 			isa = PBXGroup;
 			children = (
 				A44D151E18CC16B00039A75A /* Main.storyboard */,
-				A46E38A718CC8D0B00548A2B /* AllCreaturesTableViewController.h */,
-				A46E38A818CC8D0B00548A2B /* AllCreaturesTableViewController.m */,
-				A46E38AA18CC910A00548A2B /* Pokeson.h */,
-				A46E38AB18CC910A00548A2B /* Pokeson.m */,
-				A46E38AD18CC9FE900548A2B /* PokesonPopulation.h */,
-				A46E38AE18CC9FE900548A2B /* PokesonPopulation.m */,
-				A44D154118CC17BF0039A75A /* MultiProgressView.h */,
-				A44D154218CC17BF0039A75A /* MultiProgressView.m */,
-				A44D152118CC16B00039A75A /* TestingMultiProgressViewController.h */,
-				A44D152218CC16B00039A75A /* TestingMultiProgressViewController.m */,
+				CB9B8C4218CEA04E008A74BC /* MultiProgressView */,
+				CB9B8C4118CEA015008A74BC /* Pokesons */,
+				CB9B8C4018CEA007008A74BC /* Buildings */,
 				A46E38B018CCA4F700548A2B /* bat thing.png */,
 				A46E38B118CCA4F700548A2B /* dinosaur.png */,
 				A44D151318CC16B00039A75A /* Supporting Files */,
@@ -178,6 +174,39 @@
 				A44D153418CC16B00039A75A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB9B8C4018CEA007008A74BC /* Buildings */ = {
+			isa = PBXGroup;
+			children = (
+				CB9B8C4318CEA0F0008A74BC /* BuildingViewController.h */,
+				CB9B8C4418CEA0F0008A74BC /* BuildingViewController.m */,
+			);
+			name = Buildings;
+			sourceTree = "<group>";
+		};
+		CB9B8C4118CEA015008A74BC /* Pokesons */ = {
+			isa = PBXGroup;
+			children = (
+				A46E38A718CC8D0B00548A2B /* AllCreaturesTableViewController.h */,
+				A46E38A818CC8D0B00548A2B /* AllCreaturesTableViewController.m */,
+				A46E38AA18CC910A00548A2B /* Pokeson.h */,
+				A46E38AB18CC910A00548A2B /* Pokeson.m */,
+				A46E38AD18CC9FE900548A2B /* PokesonPopulation.h */,
+				A46E38AE18CC9FE900548A2B /* PokesonPopulation.m */,
+			);
+			name = Pokesons;
+			sourceTree = "<group>";
+		};
+		CB9B8C4218CEA04E008A74BC /* MultiProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				A44D154118CC17BF0039A75A /* MultiProgressView.h */,
+				A44D154218CC17BF0039A75A /* MultiProgressView.m */,
+				A44D152118CC16B00039A75A /* TestingMultiProgressViewController.h */,
+				A44D152218CC16B00039A75A /* TestingMultiProgressViewController.m */,
+			);
+			name = MultiProgressView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,7 +254,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = Pokeson;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Felix King";
 				TargetAttributes = {
 					A44D152918CC16B00039A75A = {
@@ -280,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB9B8C4518CEA0F0008A74BC /* BuildingViewController.m in Sources */,
 				A44D151D18CC16B00039A75A /* PokesonAppDelegate.m in Sources */,
 				A46E38AF18CC9FE900548A2B /* PokesonPopulation.m in Sources */,
 				A44D151918CC16B00039A75A /* main.m in Sources */,
@@ -340,7 +370,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -379,7 +408,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -437,7 +465,6 @@
 		A44D153F18CC16B00039A75A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/pokeson Crusoe.app/pokeson Crusoe";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -460,7 +487,6 @@
 		A44D154018CC16B00039A75A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/pokeson Crusoe.app/pokeson Crusoe";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

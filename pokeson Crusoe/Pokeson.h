@@ -14,6 +14,7 @@
 @property NSString *image_fileName;
 @property NSInteger hitpoints;
 @property NSInteger happiness;
+@property NSString *emotionText;
 
 + (Pokeson *)randomPokeson;
 

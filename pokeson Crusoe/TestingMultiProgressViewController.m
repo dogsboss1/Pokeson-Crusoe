@@ -41,7 +41,7 @@
 }
 
 - (NSInteger)numberOfAttributes {
-    return 11;
+    return 55;
 }
 
 - (UIColor *)colorOfAttributeWithIndex:(NSInteger)index {

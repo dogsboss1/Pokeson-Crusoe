@@ -12,7 +12,9 @@
 
 + (Pokeson *)randomPokeson {
     Pokeson *p = [[Pokeson alloc] init];
-    NSInteger randPokeson = arc4random_uniform(4);
+    NSInteger randPokeson = arc4random_uniform(5);
+    NSInteger randEmotion = arc4random_uniform(5);
+    
     if (randPokeson == 0) {
         p.name = @"Dineson";
         p.hitpoints = 20 + arc4random_uniform(30);
@@ -39,6 +41,21 @@
         p.happiness = 6 + arc4random_uniform(8);
         p.image_fileName = @"bat thing";
     }
+    
+    if (randEmotion == 0) {
+        p.emotionText = @"Sleepy";
+    } else if (randEmotion == 1) {
+        p.emotionText = @"Happy";
+    } else if (randEmotion == 2) {
+        p.emotionText = @"Angry";
+    } else if (randEmotion == 3) {
+        p.emotionText = @"Tired";
+    } else if (randEmotion == 4) {
+        p.emotionText = @"Sad";
+    }
+    
+    
+    
     return p;
 }
 

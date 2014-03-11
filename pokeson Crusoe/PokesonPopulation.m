@@ -14,7 +14,7 @@
 -(NSMutableArray *)allPokesons {
     if (!_allPokesons){
         _allPokesons = [[NSMutableArray alloc] init];
-        for (NSInteger i = 0; i < 1000000; i += 1) {
+        for (NSInteger i = 0; i < 50; i += 1) {
         [_allPokesons addObject:[Pokeson randomPokeson]];
         }
     }
