@@ -27,6 +27,9 @@
 		A46E38AF18CC9FE900548A2B /* PokesonPopulation.m in Sources */ = {isa = PBXBuildFile; fileRef = A46E38AE18CC9FE900548A2B /* PokesonPopulation.m */; };
 		A46E38B218CCA4F700548A2B /* bat thing.png in Resources */ = {isa = PBXBuildFile; fileRef = A46E38B018CCA4F700548A2B /* bat thing.png */; };
 		A46E38B318CCA4F700548A2B /* dinosaur.png in Resources */ = {isa = PBXBuildFile; fileRef = A46E38B118CCA4F700548A2B /* dinosaur.png */; };
+		CB15EC5218D01496001448DF /* BuildingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB15EC5118D01496001448DF /* BuildingCell.m */; };
+		CB15EC5518D0174E001448DF /* Building.m in Sources */ = {isa = PBXBuildFile; fileRef = CB15EC5418D0174E001448DF /* Building.m */; };
+		CB15EC5818D01765001448DF /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = CB15EC5718D01765001448DF /* City.m */; };
 		CB9B8C4518CEA0F0008A74BC /* BuildingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9B8C4418CEA0F0008A74BC /* BuildingViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +73,12 @@
 		A46E38AE18CC9FE900548A2B /* PokesonPopulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokesonPopulation.m; sourceTree = "<group>"; };
 		A46E38B018CCA4F700548A2B /* bat thing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bat thing.png"; sourceTree = "<group>"; };
 		A46E38B118CCA4F700548A2B /* dinosaur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dinosaur.png; sourceTree = "<group>"; };
+		CB15EC5018D01496001448DF /* BuildingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildingCell.h; sourceTree = "<group>"; };
+		CB15EC5118D01496001448DF /* BuildingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuildingCell.m; sourceTree = "<group>"; };
+		CB15EC5318D0174E001448DF /* Building.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Building.h; sourceTree = "<group>"; };
+		CB15EC5418D0174E001448DF /* Building.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Building.m; sourceTree = "<group>"; };
+		CB15EC5618D01765001448DF /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
+		CB15EC5718D01765001448DF /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
 		CB9B8C4318CEA0F0008A74BC /* BuildingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildingViewController.h; sourceTree = "<group>"; };
 		CB9B8C4418CEA0F0008A74BC /* BuildingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuildingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -181,6 +190,12 @@
 			children = (
 				CB9B8C4318CEA0F0008A74BC /* BuildingViewController.h */,
 				CB9B8C4418CEA0F0008A74BC /* BuildingViewController.m */,
+				CB15EC5018D01496001448DF /* BuildingCell.h */,
+				CB15EC5118D01496001448DF /* BuildingCell.m */,
+				CB15EC5318D0174E001448DF /* Building.h */,
+				CB15EC5418D0174E001448DF /* Building.m */,
+				CB15EC5618D01765001448DF /* City.h */,
+				CB15EC5718D01765001448DF /* City.m */,
 			);
 			name = Buildings;
 			sourceTree = "<group>";
@@ -314,7 +329,10 @@
 				A46E38AF18CC9FE900548A2B /* PokesonPopulation.m in Sources */,
 				A44D151918CC16B00039A75A /* main.m in Sources */,
 				A44D154318CC17BF0039A75A /* MultiProgressView.m in Sources */,
+				CB15EC5818D01765001448DF /* City.m in Sources */,
+				CB15EC5518D0174E001448DF /* Building.m in Sources */,
 				A46E38AC18CC910A00548A2B /* Pokeson.m in Sources */,
+				CB15EC5218D01496001448DF /* BuildingCell.m in Sources */,
 				A44D152318CC16B00039A75A /* TestingMultiProgressViewController.m in Sources */,
 				A46E38A918CC8D0B00548A2B /* AllCreaturesTableViewController.m in Sources */,
 			);
