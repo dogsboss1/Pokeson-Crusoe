@@ -11,8 +11,11 @@
 #import "Pokeson.h"
 
 @interface AllCreaturesTableViewController ()
-
 @property (nonatomic) PokesonPopulation *population;
+
+#define POKESONS_SELECTABLE_AT_ONCE 2
+
+@property (nonatomic) NSMutableArray *selectedPokesons;
 
 @end
 
@@ -25,6 +28,11 @@
 - (PokesonPopulation *)population {
     if (!_population) _population = [[PokesonPopulation alloc] init];
     return _population;
+}
+
+- (NSMutableArray *)selectedPokesons {
+    if (!_selectedPokesons) _selectedPokesons = [[NSMutableArray alloc] init];
+    return _selectedPokesons;
 }
 
 //-----------------------------------------------------------------------
@@ -57,9 +65,24 @@
                                  @(p.hitpoints), @(p.happiness)];
     cell.imageView.image = [UIImage imageNamed:p.image_fileName];
     
+    if ([self.selectedPokesons containsObject:p]) {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    } else {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
+    
     return cell;
 }
 
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    Pokeson *p = [self.population.allPokesons objectAtIndex:indexPath.row];
+    if ([self.selectedPokesons containsObject:p]) {
+        [self.selectedPokesons removeObject:p];
+        [self.tableView reloadData];
+    } else if([self.selectedPokesons count] < POKESONS_SELECTABLE_AT_ONCE) {
+        [self.selectedPokesons addObject:p];
+        [self.tableView reloadData];
+    }
+}
 
 @end
