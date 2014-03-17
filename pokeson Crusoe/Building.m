@@ -18,7 +18,11 @@
         self.level = 0;
         self.maxLevel = 0;
         self.type = buildingTypeCore;
-        self.completionProgress = 0;
+        self.completionProgress = arc4random_uniform(100) / 100.0;
+        
+        if (arc4random_uniform(2) == 0) {
+            self.completionProgress =1;
+        }
     }
     return self;
 }
