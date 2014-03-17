@@ -31,4 +31,9 @@
     return buildingsOfType;
 }
 
+-(void)constructionBuilding:(Building *)building
+{
+    [self.buildings addObject:building];
+}
+
 @end

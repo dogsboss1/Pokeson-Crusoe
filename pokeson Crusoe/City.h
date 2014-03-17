@@ -13,6 +13,8 @@
 
 @property NSMutableArray* buildings;
 
+- (void)constructionBuilding:(Building *)building;
+
 -(NSArray *)buildingOfType:(buildingType)type;
 
 @end
