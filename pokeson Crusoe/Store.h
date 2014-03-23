@@ -10,6 +10,13 @@
 
 @interface Store : NSObject
 
+@property NSString *name;
+@property NSString *image_fileName;
+@property NSInteger cost;
+@property NSInteger defence;
+@property NSInteger offence;
+
++ (Store *)randomStoreProduct;
 
 
 @end

@@ -29,6 +29,7 @@
 		A46E38B318CCA4F700548A2B /* dinosaur.png in Resources */ = {isa = PBXBuildFile; fileRef = A46E38B118CCA4F700548A2B /* dinosaur.png */; };
 		A4AC722718DE7EBC00A309BE /* StoreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AC722618DE7EBC00A309BE /* StoreTableViewController.m */; };
 		A4AC722B18DE805600A309BE /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AC722A18DE805600A309BE /* Store.m */; };
+		A4AC722E18DE836E00A309BE /* StoreProductsAmount.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AC722D18DE836E00A309BE /* StoreProductsAmount.m */; };
 		CB15EC5218D01496001448DF /* BuildingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB15EC5118D01496001448DF /* BuildingCell.m */; };
 		CB15EC5518D0174E001448DF /* Building.m in Sources */ = {isa = PBXBuildFile; fileRef = CB15EC5418D0174E001448DF /* Building.m */; };
 		CB15EC5818D01765001448DF /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = CB15EC5718D01765001448DF /* City.m */; };
@@ -83,6 +84,8 @@
 		A4AC722618DE7EBC00A309BE /* StoreTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreTableViewController.m; sourceTree = "<group>"; };
 		A4AC722918DE805600A309BE /* Store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store.h; sourceTree = "<group>"; };
 		A4AC722A18DE805600A309BE /* Store.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store.m; sourceTree = "<group>"; };
+		A4AC722C18DE836E00A309BE /* StoreProductsAmount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreProductsAmount.h; sourceTree = "<group>"; };
+		A4AC722D18DE836E00A309BE /* StoreProductsAmount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreProductsAmount.m; sourceTree = "<group>"; };
 		CB15EC5018D01496001448DF /* BuildingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildingCell.h; sourceTree = "<group>"; };
 		CB15EC5118D01496001448DF /* BuildingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuildingCell.m; sourceTree = "<group>"; };
 		CB15EC5318D0174E001448DF /* Building.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Building.h; sourceTree = "<group>"; };
@@ -156,9 +159,9 @@
 		A44D151218CC16B00039A75A /* pokeson Crusoe */ = {
 			isa = PBXGroup;
 			children = (
+				A44D151E18CC16B00039A75A /* Main.storyboard */,
 				A4AC722818DE7F7B00A309BE /* Start Screen */,
 				A4AC722418DE7E9C00A309BE /* Store */,
-				A44D151E18CC16B00039A75A /* Main.storyboard */,
 				CBB26EEC18D7D5B00037CA3F /* Equipment */,
 				CB9B8C4218CEA04E008A74BC /* MultiProgressView */,
 				CB9B8C4118CEA015008A74BC /* Pokesons */,
@@ -213,6 +216,8 @@
 				A4AC722618DE7EBC00A309BE /* StoreTableViewController.m */,
 				A4AC722918DE805600A309BE /* Store.h */,
 				A4AC722A18DE805600A309BE /* Store.m */,
+				A4AC722C18DE836E00A309BE /* StoreProductsAmount.h */,
+				A4AC722D18DE836E00A309BE /* StoreProductsAmount.m */,
 			);
 			name = Store;
 			sourceTree = "<group>";
@@ -389,6 +394,7 @@
 				CBB26EEF18D7D6290037CA3F /* PokesonEquipment.m in Sources */,
 				A46E38AC18CC910A00548A2B /* Pokeson.m in Sources */,
 				CB15EC5218D01496001448DF /* BuildingCell.m in Sources */,
+				A4AC722E18DE836E00A309BE /* StoreProductsAmount.m in Sources */,
 				A44D152318CC16B00039A75A /* TestingMultiProgressViewController.m in Sources */,
 				A46E38A918CC8D0B00548A2B /* AllCreaturesTableViewController.m in Sources */,
 				CB609A5618D9551E00F4E014 /* StartScreenViewController.m in Sources */,

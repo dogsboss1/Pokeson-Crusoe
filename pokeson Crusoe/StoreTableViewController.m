@@ -7,6 +7,8 @@
 //
 
 #import "StoreTableViewController.h"
+#import "Store.h"
+#import "StoreProductsAmount.h"
 
 @interface StoreTableViewController ()
 
