@@ -50,7 +50,8 @@
         s.defence = 3 + arc4random_uniform(9);
         s.offence = 30 + arc4random_uniform(30);
         s.image_fileName = @"bat thing";
-    }    return s;
+    }
+    return s;
 }
 
 @end
